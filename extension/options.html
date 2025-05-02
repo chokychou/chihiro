@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AI Assistant Options</title>
+    <style>
+      body {
+        padding: 20px;
+        font-family: Arial, sans-serif;
+      }
+      .option-container {
+        margin: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Chihiro Settings</h1>
+    <p>
+      If you want to come back to this page and change your settings, right
+      click on Chihiro icon and choose Options.
+    </p>
+    <h2>Use assisstant as a web app</h2>
+    <div class="option-container">
+      <input type="radio" id="gemini" name="ai-select" value="gemini" />
+      <label for="gemini">Gemini</label>
+    </div>
+    <div class="option-container">
+      <input type="radio" id="chatgpt" name="ai-select" value="chatgpt" />
+      <label for="chatgpt">ChatGPT</label>
+    </div>
+    <div class="option-container">
+      <input type="radio" id="chatgpt" name="ai-select" value="deepseek" />
+      <label for="deepseek">DeepSeek</label>
+    </div>
+    <hr />
+    <h2>Additional options</h2>
+    <div class="option-container">
+        <input type="checkbox" id="use-context" name="ai-option" value="use-context" />
+        <label for="use-context">Use webpage content as context (in progress) </label>
+    </div>
+    <script type="module" src="options.js"></script>
+  </body>
+</html>
